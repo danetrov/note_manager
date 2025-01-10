@@ -10,6 +10,12 @@ main = input("Основная тема: ")
 headline = input("Заголовок: ")
 subtitle = input("Подзаголовок: ")
 
-spisok = [username, title, [main, headline, subtitle],
-          content, status, created_date, issue_date]
-print(spisok)
+spisok = [username, title,
+          main,
+          headline, subtitle, content,
+          status,
+          created_date,
+          issue_date]
+print("Вот что получилось: ")
+for index, item in enumerate(spisok):
+    print(f"{index + 1}. {item}")
