@@ -17,7 +17,6 @@ while True:
     answer = input("Хотите удалить заметку?(да/нет): ")
 
     if answer.lower() == "да":
-        operation = input("Введите имя пользователя для удаления заметки: ")
         found = False
 
         while not found:
