@@ -8,9 +8,9 @@ notes = [
 ]
 print("Текущие заметки:")
 for index, note in enumerate(notes, start=1):
-        print(f"{index}. Имя: {note['username']}\n   "
-              f"Заголовок: {note['title']}\n   "
-              f"Описание: {note['content']}\n")
+    print(f"{index}. Имя: {note['username']}\n   "
+          f"Заголовок: {note['title']}\n   "
+          f"Описание: {note['content']}\n")
 
 while True:
 
@@ -38,11 +38,10 @@ while True:
         print("Текущие заметки:")
         for index, note in enumerate(notes, start=1):
             print(f"{index}. Имя: {note['username']}\n   "
-              f"Заголовок: {note['title']}\n   "
-              f"Описание: {note['content']}\n")
+                  f"Заголовок: {note['title']}\n   "
+                  f"Описание: {note['content']}\n")
         break
     else:
         print("Некорректный ввод, напишите да/нет")
-
 
 
