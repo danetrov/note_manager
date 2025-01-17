@@ -50,8 +50,6 @@ while True:
             try:
                 created_date = input("Дата создания заметки (dd-mm-yyyy): ")
                 created_date = datetime.strptime(created_date, "%d-%m-%Y").date()
-                # created_date = datetime.strptime(created_date, "%d-%m-%Y")
-                # created_date = created_date.date()
                 break
             except ValueError:
                 print("Пожалуйста, введите дату корректно(например 01-01-2021): ")
@@ -60,8 +58,6 @@ while True:
             try:
                 issue_date = input("Введите дату дедлайна(dd-mm-yyyy): ")
                 issue_date = datetime.strptime(issue_date, "%d-%m-%Y").date()
-                # issue_date = datetime.strptime(issue_date, "%d-%m-%Y")
-                # issue_date = issue_date.date()
                 break
             except ValueError:
                 print("Пожалуйста, введите дату корректно(например 01-01-2021): ")
