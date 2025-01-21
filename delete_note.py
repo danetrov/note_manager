@@ -24,7 +24,7 @@ while True:
         while not found:
             operation = input("Введите имя пользователя для удаления заметки: ")
 
-            for note in notes:
+            for note in notes[:]: # Исправил, добавил срез(временная копию списка)
 
                 if note["username"].lower() == operation.lower():
                     notes.remove(note)
